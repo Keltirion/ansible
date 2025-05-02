@@ -1,0 +1,12 @@
+- name: Test playbook
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Test task
+      debug:
+        msg: "This is a test task {{ ansible_host }}"
+      register: test_result
+
+    - name: Print test result
+      debug:
+        var: test_result

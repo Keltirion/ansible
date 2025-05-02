@@ -1,0 +1,9 @@
+all:
+  children:
+    client_1:
+      hosts:
+        vm_1:
+          ansible_user: lech
+          ansible_host: 127.0.0.1
+          ansible_port: 52112
+          

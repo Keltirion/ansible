@@ -1,0 +1,7 @@
+- name: Clone dotfiles repository
+  ansible.builtin.git:
+    repo: git@github.com:Keltirion/.dotfiles.git
+    dest: "{{ lookup('ansible.builtin.env', 'HOME') }}/repositories/personal/dotfiles"
+    single_branch: yes
+    version: master
+    update: false

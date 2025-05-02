@@ -1,0 +1,4 @@
+.venv
+.ansible
+
+.DS_Store
